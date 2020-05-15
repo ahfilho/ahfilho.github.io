@@ -9,9 +9,6 @@
 
 }
 
-[class*="col-"] {
-  float: left;
-}
 body,html {
   font-family: 'Quicksand', sans-serif;
   margin:0;
@@ -264,6 +261,8 @@ text-decoration: none;
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+    float: left;
+
 }
 
 @media only screen and (min-width: 768px) {
