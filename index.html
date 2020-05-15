@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.png" />
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
     <!--load all styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,34 +15,81 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
 
 
 </head>
 <html>
 
 <body>
+    <input type="checkbox" id="check">
+    <div class="icone">
+        <label id="icone" for="check"><span class="material-icons"> menu_open
+            </span>
+        </label>
+    </div>
+    <div class="barra">
+        <nav>
+            <a href="#home" id="inicio">
+                <div class="link">Início</div>
+            </a>
+            <a href="#news">
+                <div class="link">Sobre
+                </div>
+            </a>
+            <a href="#contact">
+                <div class="link">Serviços
+                </div>
+            </a>
+            <a href="https://www.facebook.com/ahfilho">
+                <div class="link"><i class="fa fa-facebook"></i>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/afilho_/">
+                <div class="link"><i class="fa fa-instagram"></i>
+                </div>
+            </a>
+            <a
+                href="https://api.whatsapp.com/send?phone=5581996503148&text=Ol%C3%A1%20!%20Eu%20venho%20do%20instagram.">
+                <div class="link"><i class="fa fa-whatsapp"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="link"><i class="fa fa-github"></i>
+                </div>
+            </a>
+            <a style="color: white;">Arlindo Filho</a>
+            <img src="img/favicon.png" style="width:30px; color: white;">
+        </nav>
+
+    </div>
+
     <div class="bg">
     </div>
     <div class="row">
-        <div class="container">
+
+        <div class="container" id="inicio">
             <div class="center" style=" color: white; background-color: transparent;
               font-family: 'Quicksand', sans-serif; text-shadow: 2px 2px 3px black; 
             ">Bem-Vindo!</div>
         </div>
         <div class="col-12 menu">
+
             <ul>
-                <li><a class="active" href="#home">Início</a></li>
+                <li><a class="active" href="#home" id="inicio">Início</a></li>
                 <li><a href="#news">Sobre</a></li>
                 <li><a href="#contact">Serviços</a></li>
-                <li><a><i class="fa fa-facebook"></i></a></li>
-                <li><a><i class="fa fa-instagram"></i></a></li>
-                <li><a><i class="fa fa-whatsapp"></i></a></li>
-                <li><a><i class=" fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/ahfilho"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/afilho_/"><i class="fa fa-instagram"></i></a></li>
+                <li><a
+                        href="https://api.whatsapp.com/send?phone=5581996503148&text=Ol%C3%A1%20!%20Eu%20venho%20do%20instagram.">
+                        <i class="fa fa-whatsapp"></i></a></li>
+                <li><a href=""><i class=" fa fa-github"></i></a></li>
 
             </ul>
         </div>
-        <div class="inicio col-12">
-            <h4>Sobre</h4>
+        <div class=" inicio col-12">
+            <h3>Sobre</h3>
             <div class="sobre col-6">
                 <br>
                 <img src="img/dinho.png" style="width: 150px; border-radius: 40%;">
@@ -56,13 +103,17 @@
             </div>
             <div class=" direita col-6">
                 <h4> </h4>
-                <h5>Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me ocupei mais com
+                <h5>Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me
+                    ocupei mais com
                     coisas mais demoradas: =)
-                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me ocupei mais com
+                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me
+                    ocupei mais com
                     coisas mais demoradas: =)
-                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me ocupei mais com
+                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me
+                    ocupei mais com
                     coisas mais demoradas: =)
-                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me ocupei mais com
+                    Bom, aqui falta algo que eu ainda não desenrolei mas é só questão de tempo pq eu me
+                    ocupei mais com
                     coisas mais demoradas: =)
                 </h5>
 
@@ -75,17 +126,17 @@
         <h4 style="font-size: 20px;"></h4>
 
         <div class="AAA col-12">
+            <h3>Serviços</h3>
             <div class="descricao col-4">
+
                 <h4>Códigos</h4>
                 <span class="material-icons" style="font-size: 40px; color:black">
                     code
                 </span>
-                <h5> Diante de uma infinidade de linguagens de programação que estão disponíveis
-                    hoje, escolhi algumas
-                    que gostei mais desde a faculdade, outras que venho aprendendo e algumas que pretendo ver.
+                <h5>
                     <br> Tenho um pouco mais de conhecimento em Java, C e atualmente praticando Javascript.
                     <br>
-                    As linguagens e frameworks que tenho mais proximidade são estes:<br>
+                    As linguagens e frameworks que tenho mais proximidade são estes:
                     <td>Javascript - Java/Web<br>C - Kotlin<br>React - Native - Android<br> HTML5 - CSS - Bootstrap</td>
                 </h5>
             </div>
@@ -95,21 +146,12 @@
                     desktop_windows
                 </span>
                 <h5>
-                    Além de um pouco de software também lido um pouco com hardware e manutenção de PC. <br>Há alguns
-                    anos
-                    fiz cursos de manutenção e desde então tenho feito alguns serviços relacionados:
                     <br>
-                    <td><span class="material-icons">
-                            arrow_right
-                        </span>Formatação Desktop,Notebook ou Netbook</td>
+                    <td>Formatação Desktop,Notebook ou Netbook</td>
                     <br>
-                    <td><span class="material-icons">
-                            arrow_right
-                        </span>Instalação e atualização de programas, drivers, jogos e relacionados.</td>
+                    <td>Instalação e atualização de programas, drivers, jogos e relacionados.</td>
                     <br>
-                    <td><span class="material-icons">
-                            arrow_right
-                        </span>Backup de arquivos, limpeza física e de arquivos do sistema. </td>
+                    <td>Backup de arquivos, limpeza física e de arquivos do sistema. </td>
                 </h5>
             </div>
             <div class="portfolio col-4">
@@ -117,7 +159,8 @@
                 <span class="material-icons" style="font-size: 40px; color: black;">folder_open</i>
                 </span>
                 <h5>
-                    Em desenvolvimento.<br>
+                    <br>
+                    Em desenvolvimento.
                     Em desenvolvimento.
                     Em desenvolvimento.
                     Em desenvolvimento.
@@ -130,19 +173,48 @@
                 </h5>
             </div>
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#1C1C1C" fill-opacity="1" d="M0,128L1440,160L1440,320L0,320Z"></path>
-        </svg>
-        <div class="footer">
-            ©Copyright 2020 Arlindo Filho<br>
-            <br>
-            <i class="fa fa-facebook" style="font-size: 20px; margin: 5px;"></i>
-            <i class="fa fa-instagram" style="font-size: 20px; margin: 5px"></i>
-            <i class=" fa fa-whatsapp" style="font-size: 20px; margin: 5px"></i>
-            <i class=" fa fa-github" style="font-size: 20px; margin: 5px"></i>
+        <div class="servicos col-12">
+            <h3></h3>
+            <div class="a1 col-6">
+                <h3>Site</h3>
+                <h5>Precisa de um site para o seu negócio?
+                    Entre em contato! </h5>
+                <br><br><br>
+                <img src="img/site-removebg-preview (1).png" style="width: 250px;">
+                <br>
+                <h5>Uma página web irá ajudar a divulgar ainda mais o seu negócio. Uma página responsiva para qualquer
+                    tamanho de tela.</h5>
+            </div>
+            <div class="a2 col-6">
+                <h3>Formatação</h3>
+                <h5>Seu computador está lento?<br>
+                    Precisa de manutenção!</h5>
+                <img src="img/empregado-irritado-com-o-escritorio_1133-194-removebg-preview.png" style="width:370px">
+                <br>
+                <h5>Seu computador pode estar dando trabalho por diversos fatores.
+                    Entre em contato e resolveremos!
+                </h5>
+                <br>
+            </div>
 
-            </i>
         </div>
+
+
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#1C1C1C" fill-opacity="1" d="M0,128L1440,160L1440,320L0,320Z"></path>
+    </svg>
+    <div class="footer">
+        ©Copyright 2020 Arlindo Filho<br>
+        <br>
+        <a href="https://www.facebook.com/ahfilho"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/afilho_/"><i class="fa fa-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5581996503148&text=Ol%C3%A1%20!%20Eu%20venho%20do%20instagram."><i
+                class="fa fa-whatsapp"></i></a>
+        <a href=""><i class=" fa fa-github" style="font-size: 20px; margin: 5px"></i></a>
+
+        </i>
+    </div>
     </div>
     <script src="./js/js.js"></script>
 </body>
