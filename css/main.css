@@ -99,7 +99,7 @@ NAVBAR
   color: white;
   background-color: #1C1C1C;
   margin-top: -4px;
-  height: 400px;
+  height:auto;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
@@ -153,7 +153,7 @@ h3{
 h4{
   text-align: center;
     font-family: 'Quicksand', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     color: #1C1C1C;
     
  vertical-align: middle;
@@ -161,20 +161,15 @@ h4{
 }
 h5{
   text-align: center;
-  text-indent: 10px;
   word-spacing: 1px;
   letter-spacing: 1px;
-  /* FONTES: Titillium Web
-, RALEWAY
-Nanum Gothic
-
-*/
-
-  font-family: 'Raleway', sans-serif;
   font-size: 15px;
-  margin: auto;
+  font-weight: 200;
+  font-family: 'Questrial', sans-serif;
 
 }
+
+
 p{
   font-size: 15px;
   text-indent: 80px;
@@ -353,6 +348,8 @@ display: none;
   position: fixed;
   transition: all .2s linear;
   left: -300px;
+  font-weight: 200;
+
 } 
 nav{
   width: 100%;
