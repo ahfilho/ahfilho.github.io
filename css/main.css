@@ -12,7 +12,7 @@
 body,html {
   font-family: '  ', sans-serif;
   margin:0;
-  height: 90%;
+  height: 100%;
     background-color:#f6f6f6;
 
 }
@@ -125,8 +125,6 @@ display: none;
 display: none;
   }
 }
-
-
 .direita{
   text-align: center;
   font-size: 20px;
@@ -137,7 +135,7 @@ display: none;
    padding-left: 50px;
   padding-right: 50px;
   padding-top: 50px;
- height: 400px;
+ height: 40px;
 
 }
 li{
@@ -340,6 +338,8 @@ display: none;
   border-radius: 20%;
   background-color: rgba(0, 0, 0, 0.5);
   top: 10px;
+    font-weight: 200;
+
 }
 .barra{
   background: rgb(0, 0, 0); /* Fallback color */
@@ -349,6 +349,7 @@ display: none;
   transition: all .2s linear;
   left: -300px;
   font-weight: 200;
+  
 
 } 
 nav{
@@ -367,6 +368,8 @@ nav a{
   transition: all .2s linear;
   color:white;
   border-bottom: 2px solid;
+    font-weight: 200;
+
 }
 .link:hover{
   background-color:#00BFFF;
@@ -386,3 +389,76 @@ display: none;
 }
 /*------------------------------------*/
 /*-----------------serviços-------------------*/
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 26px;
+  margin-left: 50px;
+  margin-top:50px;
+}
+
+.openbtn {
+cursor: pointer;
+  padding: 12px;
+  top:10px;
+  margin-left: 10px;
+  z-index: 1;
+    /*Faz com que o ícone fique fixo.*/
+  overflow: hidden;
+  position: fixed;
+  color: white;
+  border-radius: 20%;
+  background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 200;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 0px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@media only screen and (min-width: 768px){
+  #main{
+display: none;
+  }
+  div.sidebar{
+    display: none;
+  }
+
+}
