@@ -27,6 +27,7 @@
 <html>
 
 <body>
+    <!--
     <input type="checkbox" id="check">
     <div class="icone">
         <label id="icone" for="check"><span class="material-icons"> menu_open
@@ -35,11 +36,11 @@
     </div>
     <div class="barra" id="fechabarra">
         <nav>
-            <a href="#inicio">
-                <div class="link">Início</div>
+            <a href="#inicio" javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <div class="link" "closebtn" onclick="closenav()">Início</div>
             </a>
-            <a href="#sobre">
-                <div class="link">Sobre
+            <a href="#sobre" javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <div class="link" "closebtn" onclick="closenav()">Sobre
                 </div>
             </a>
             <a href="#servicos">
@@ -68,9 +69,47 @@
         </nav>
 
     </div>
+-->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="color: red; border: red;">X</a>
+        <br><br><br>
+        <a href="#inicio" javascript:void(0)" class="closebtn" onclick="closeNav()">Início</a>
+        <br>
+        <br>
+        <br>
+        <a href="#sobre" javascript:void(0)" class="closebtn" onclick="closeNav()">Sobre</a>
+        <br>
+        <br>
+        <br>
+        <a href="#servicos" javascript:void(0)" class="closebtn" onclick="closeNav()">Serviços</a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.facebook.com/ahfilho" javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                class="fa fa-facebook"></i></a>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.instagram.com/afilho_/" javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                class="fa fa-instagram"></i></a>
+        <br>
+        <br>
+        <br>
+        <a href="https://api.whatsapp.com/send?phone=5581996503148&text=Ol%C3%A1%2C%20eu%20vim%20do%20site%20!"
+            javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-whatsapp"></i></a>
+        <br>
+        <br>
+        <br>
+        <a href="#" javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-github"></i></a>
+    </div>
 
+    <div id="main">
+        <button class="openbtn" class="closebtn" onclick="openNav()"><span class="material-icons">
+                menu_open
+            </span></button>
+    </div>
 
-    <div class="bg" id="#inicio">
+    <div class=" bg" id="#inicio">
     </div>
     <div class="row">
         <div class="container">
